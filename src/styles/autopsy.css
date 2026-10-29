@@ -1,0 +1,337 @@
+/* Autopsy & Deep Handover View */
+.autopsy-hero {
+  position: relative;
+  padding: 60px 0 40px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: radial-gradient(circle at 50% 10%, rgba(255, 51, 102, 0.08) 0%, transparent 60%);
+}
+
+.tombstone-banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.tombstone-main {
+  flex: 1;
+  min-width: 320px;
+}
+
+.tombstone-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.tombstone-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.tombstone-epitaph {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 650px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+/* Founder quote block */
+.founder-quote {
+  border-left: 3px solid var(--amber-neon);
+  padding: 12px 18px;
+  background: rgba(255, 184, 0, 0.05);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  color: #e2e8f0;
+  margin-bottom: 20px;
+  max-width: 680px;
+  font-size: 0.95rem;
+}
+
+/* Quick stats row */
+.autopsy-vital-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.vital-stat-box {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+}
+
+.vital-stat-label {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--text-dim);
+  text-transform: uppercase;
+}
+
+.vital-stat-val {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-top: 4px;
+}
+
+/* Two-column autopsy body */
+.autopsy-content-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 40px;
+  padding: 48px 0;
+}
+
+/* Autopsy Nav Tabs */
+.autopsy-tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 32px;
+  overflow-x: auto;
+}
+
+.autopsy-tab-btn {
+  padding: 12px 20px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.autopsy-tab-btn:hover {
+  color: var(--text-main);
+}
+
+.autopsy-tab-btn.active {
+  color: var(--emerald-neon);
+  border-bottom-color: var(--emerald-neon);
+}
+
+/* Handover Runbook Section */
+.handover-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  margin-bottom: 28px;
+}
+
+.handover-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.code-block-preview {
+  background: #05070b;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: #38bdf8;
+  overflow-x: auto;
+  line-height: 1.6;
+}
+
+/* Code Health Radar */
+.code-health-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.health-metric-box {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.health-metric-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.progress-bar-bg {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.6s ease;
+}
+
+/* Post-Mortem Text Block */
+.post-mortem-section {
+  line-height: 1.7;
+  color: #cbd5e1;
+}
+
+.post-mortem-section h3 {
+  color: var(--text-main);
+  margin: 24px 0 10px;
+  font-size: 1.2rem;
+}
+
+.post-mortem-section ul {
+  padding-left: 20px;
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* AI 2026 Pivot Suggestions */
+.pivot-card {
+  background: linear-gradient(135deg, rgba(0, 210, 255, 0.05), rgba(168, 85, 247, 0.05));
+  border: 1px solid rgba(0, 210, 255, 0.25);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  margin-bottom: 16px;
+  transition: all var(--transition-fast);
+}
+
+.pivot-card:hover {
+  border-color: var(--cyan-neon);
+  box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+}
+
+.pivot-card h4 {
+  color: var(--cyan-neon);
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Sticky Right Column: Stripper Checkout Box */
+.stripper-checkout-box {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  position: sticky;
+  top: 100px;
+  box-shadow: var(--shadow-lg);
+}
+
+.checkout-box-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.checkout-box-subtitle {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+.stripper-selection-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.stripper-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.stripper-row:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.stripper-row.selected {
+  border-color: rgba(0, 245, 155, 0.4);
+  background: rgba(0, 245, 155, 0.05);
+}
+
+.stripper-label-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+}
+
+.stripper-label-group input {
+  accent-color: var(--emerald-neon);
+  width: 16px;
+  height: 16px;
+}
+
+.stripper-price {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+.checkout-total-strip {
+  border-top: 1px dashed var(--border-medium);
+  padding-top: 18px;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.checkout-total-label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.checkout-total-amount {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--emerald-neon);
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 992px) {
+  .autopsy-content-layout {
+    grid-template-columns: 1fr;
+  }
+  .stripper-checkout-box {
+    position: static;
+  }
+}

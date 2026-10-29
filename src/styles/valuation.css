@@ -1,0 +1,138 @@
+/* AI Dead-Asset Valuator Calculator Styling */
+.valuator-container {
+  padding: 48px 0 80px;
+}
+
+.valuator-layout {
+  display: grid;
+  grid-template-columns: 1fr 440px;
+  gap: 36px;
+  align-items: start;
+}
+
+.valuator-form-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Slider Controls */
+.valuator-slider-row {
+  margin-bottom: 24px;
+}
+
+.slider-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.slider-label {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.slider-value-badge {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--emerald-neon);
+  background: var(--emerald-subtle);
+  padding: 3px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(0, 245, 155, 0.25);
+}
+
+.valuator-slider {
+  width: 100%;
+  height: 6px;
+  background: var(--bg-surface-elevated);
+  border-radius: var(--radius-full);
+  outline: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.valuator-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--emerald-neon);
+  cursor: pointer;
+  box-shadow: 0 0 12px var(--emerald-neon);
+  transition: transform var(--transition-fast);
+}
+
+.valuator-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* Sticky Valuation Results Card */
+.valuation-results-card {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  box-shadow: var(--shadow-lg);
+  position: sticky;
+  top: 100px;
+}
+
+.valuation-highlight-box {
+  text-align: center;
+  padding: 28px 20px;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 245, 155, 0.12) 0%, rgba(0, 0, 0, 0.4) 100%);
+  border: 1px solid rgba(0, 245, 155, 0.3);
+  border-radius: var(--radius-lg);
+  margin-bottom: 24px;
+}
+
+.valuation-big-price {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: var(--emerald-neon);
+  font-family: var(--font-mono);
+  line-height: 1;
+  margin: 10px 0;
+}
+
+.valuation-comparison-table {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.valuation-comparison-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.02);
+  font-size: 0.88rem;
+}
+
+.savings-pill {
+  background: rgba(0, 245, 155, 0.15);
+  color: var(--emerald-neon);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 900px) {
+  .valuator-layout {
+    grid-template-columns: 1fr;
+  }
+  .valuation-results-card {
+    position: static;
+  }
+}

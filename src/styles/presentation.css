@@ -1,0 +1,248 @@
+/* Presentation, AI vs Traditional & Market Analytics Styling */
+
+/* AI vs Traditional Mode Comparison Container */
+.compare-container {
+  padding: 48px 0 80px;
+}
+
+.compare-matrix-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  margin-top: 28px;
+  background: var(--bg-surface);
+}
+
+.compare-matrix-table th {
+  background: var(--bg-surface-elevated);
+  padding: 18px 24px;
+  text-align: left;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.compare-matrix-table td {
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.compare-matrix-table tr:last-child td {
+  border-bottom: none;
+}
+
+.col-traditional {
+  border-left: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.col-ai {
+  border-left: 1px solid rgba(0, 210, 255, 0.2);
+  background: rgba(0, 210, 255, 0.03);
+  color: #e0f2fe !important;
+  font-weight: 500;
+}
+
+/* Persona Walkthrough Interactive Box (Riya's Journey) */
+.persona-journey-card {
+  background: linear-gradient(135deg, rgba(255, 184, 0, 0.08), rgba(0, 245, 155, 0.05));
+  border: 1px solid rgba(255, 184, 0, 0.3);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  margin-top: 40px;
+}
+
+.persona-profile-badge {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.persona-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f59e0b, #ec4899);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+}
+
+/* TAM / SAM / SOM Interactive Pyramid */
+.market-pyramid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+  gap: 16px;
+}
+
+.pyramid-tier {
+  width: 100%;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-medium);
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+
+.pyramid-tier:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+.pyramid-tam {
+  max-width: 820px;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(99, 102, 241, 0.1));
+  border-color: rgba(14, 165, 233, 0.3);
+}
+.pyramid-tam:hover {
+  box-shadow: 0 0 30px rgba(14, 165, 233, 0.3);
+}
+
+.pyramid-sam {
+  max-width: 620px;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(236, 72, 153, 0.1));
+  border-color: rgba(168, 85, 247, 0.3);
+}
+.pyramid-sam:hover {
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
+}
+
+.pyramid-som {
+  max-width: 440px;
+  background: linear-gradient(135deg, rgba(0, 245, 155, 0.2), rgba(16, 185, 129, 0.15));
+  border-color: var(--emerald-neon);
+  box-shadow: 0 0 25px rgba(0, 245, 155, 0.2);
+}
+.pyramid-som:hover {
+  box-shadow: 0 0 40px rgba(0, 245, 155, 0.45);
+}
+
+.pyramid-tier-val {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  margin: 6px 0;
+}
+
+/* Buyer Utility Matrix (Slide 5) */
+.utility-matrix-grid {
+  display: grid;
+  grid-template-columns: 180px repeat(6, 1fr);
+  gap: 8px;
+  margin-top: 24px;
+  overflow-x: auto;
+}
+
+.matrix-cell {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  text-align: center;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+}
+
+.matrix-header-cell {
+  background: rgba(255, 255, 255, 0.05);
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--text-main);
+  min-height: 48px;
+}
+
+.matrix-lever-cell {
+  font-weight: 600;
+  text-align: left;
+  align-items: flex-start;
+  color: var(--text-main);
+}
+
+.matrix-cell.has-circle {
+  background: rgba(0, 245, 155, 0.08);
+  border-color: rgba(0, 245, 155, 0.3);
+}
+
+.matrix-cell.has-cross {
+  background: rgba(255, 51, 102, 0.08);
+  border-color: rgba(255, 51, 102, 0.3);
+}
+
+.circle-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #10b981;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.cross-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ef4444;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+/* Financial Forecast Interactive Chart Container */
+.financial-chart-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  margin-top: 36px;
+}
+
+.chart-canvas-container {
+  height: 380px;
+  width: 100%;
+  position: relative;
+  margin-top: 24px;
+}
+
+/* Roast & Pivot Forum Board */
+.roast-thread-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  margin-bottom: 20px;
+  transition: all var(--transition-fast);
+}
+
+.roast-thread-card:hover {
+  border-color: rgba(255, 184, 0, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.pivot-suggestion-pill {
+  background: rgba(0, 210, 255, 0.08);
+  border: 1px solid rgba(0, 210, 255, 0.25);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  margin-top: 12px;
+}

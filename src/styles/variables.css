@@ -1,0 +1,65 @@
+:root {
+  /* Color Palette: Void Obsidian & Cyber Revival */
+  --bg-void: #07090e;
+  --bg-surface: #0e131f;
+  --bg-surface-elevated: #141c2e;
+  --bg-card: rgba(17, 24, 39, 0.7);
+  --bg-card-hover: rgba(26, 36, 56, 0.85);
+  --bg-glass: rgba(14, 19, 31, 0.75);
+  
+  /* Primary Revival Emerald (Heartbeat of Code) */
+  --emerald-neon: #00f59b;
+  --emerald-glow: rgba(0, 245, 155, 0.35);
+  --emerald-subtle: rgba(0, 245, 155, 0.12);
+  --emerald-dark: #059669;
+
+  /* Vital Signs Amber */
+  --amber-neon: #ffb800;
+  --amber-glow: rgba(255, 184, 0, 0.35);
+  --amber-subtle: rgba(255, 184, 0, 0.12);
+
+  /* AI Copilot Cyan */
+  --cyan-neon: #00d2ff;
+  --cyan-glow: rgba(0, 210, 255, 0.35);
+  --cyan-subtle: rgba(0, 210, 255, 0.12);
+
+  /* Death & Autopsy Crimson */
+  --crimson-neon: #ff3366;
+  --crimson-glow: rgba(255, 51, 102, 0.35);
+  --crimson-subtle: rgba(255, 51, 102, 0.12);
+
+  /* Neutral & Borders */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.15);
+  --border-accent: rgba(0, 245, 155, 0.3);
+  
+  /* Text */
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --text-inverse: #07090e;
+
+  /* Typography */
+  --font-display: 'Space Grotesk', -apple-system, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing & Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 30px var(--emerald-glow);
+  --shadow-cyan-glow: 0 0 30px var(--cyan-glow);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
