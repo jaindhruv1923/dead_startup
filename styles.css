@@ -395,10 +395,25 @@ h2, h3, h4, .font-display {
 }
 
 /* Repositioned Header Container for balanced margins and no overflow */
+#site-header {
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
 #site-header .container {
-  max-width: 1440px;
+  max-width: 1360px;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 16px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  margin-right: 12px;
 }
 
 .navbar {
